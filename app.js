@@ -23,7 +23,7 @@ app.use((req, res, next) => {
 
 // handle server error
 app.use((err, req, res, next) => {
-  res.status(500).send("server is broken");
   console.log(err);
+  res.status(500).send("server is broken");
 });
 module.exports = app;
