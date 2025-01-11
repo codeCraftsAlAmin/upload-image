@@ -16,14 +16,14 @@ app.get("/", (req, res) => {
   res.render("index");
 });
 
-// handle router errors
-app.use((req, res, next) => {
-  res.status(404).send("router not found");
-});
+// // handle router errors
+// app.use((req, res, next) => {
+//   res.status(404).send("router not found");
+// });
 
-// handle server error
-app.use((err, req, res, next) => {
-  console.log(err);
-  res.status(500).send("server is broken");
-});
+// // handle server error
+// app.use((err, req, res, next) => {
+//   console.log(err);
+//   res.status(500).send("server is broken");
+// });
 module.exports = app;
